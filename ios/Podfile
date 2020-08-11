@@ -1,6 +1,6 @@
 require_relative '../node_modules/react-native/scripts/react_native_pods'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
-
+use_frameworks!
 platform :ios, '10.0'
 
 target 'instagramEditor' do
@@ -17,9 +17,33 @@ target 'instagramEditor' do
   #
   # Note that if you have use_frameworks! enabled, Flipper will not work and
   # you should disable these next few lines.
-  use_flipper!
+
+  # $static_framework = ['FlipperKit', 'Flipper', 'Flipper-Folly',
+  # 'CocoaAsyncSocket', 'ComponentKit', 'DoubleConversion',
+  # 'glog', 'Flipper-PeerTalk', 'Flipper-RSocket', 'Yoga', 'YogaKit',
+  # 'CocoaLibEvent', 'OpenSSL-Universal', 'boost-for-react-native']
+
+  # pre_install do |installer|
+  #   Pod::Installer::Xcode::TargetValidator.send(:define_method, :verify_no_static_framework_transitive_dependencies) {}
+  #   installer.pod_targets.each do |pod|
+  #     if $static_framework.include?(pod.name)
+  #       def pod.build_type;
+  #         Pod::Target::BuildType.static_library
+  #       end
+  #     end
+  #   end
+  # end
+
+  # use_flipper!
   post_install do |installer|
-    flipper_post_install(installer)
+    # flipper_post_install(installer)
+    installer.pods_project.targets.each do |target|
+      if target.name.include?('iOSPhotoEditor')
+        target.build_configurations.each do |config|
+          config.build_settings['SWIFT_VERSION'] = '5'
+        end
+      end
+    end
   end
 end
 
