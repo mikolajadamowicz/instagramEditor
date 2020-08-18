@@ -29,7 +29,7 @@ const App: () => React$Node = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" />
-      <SafeAreaView>
+      <SafeAreaView style={{ flex: 1 }}>
         <Camera />
       </SafeAreaView>
     </>

@@ -6,6 +6,7 @@ import {
   TouchableOpacity,
   SafeAreaView,
 } from 'react-native';
+import Icon from 'react-native-vector-icons/FontAwesome';
 import { RNCamera } from 'react-native-camera';
 
 const Camera = () => {
@@ -21,7 +22,7 @@ const Camera = () => {
   // flashMode={RNCamera.Constants.FlashMode.on}
   return (
     <>
-      <RNCamera
+      {/* <RNCamera
         ref={camera}
         style={styles.container}
         androidCameraPermissionOptions={{
@@ -36,9 +37,14 @@ const Camera = () => {
           buttonPositive: 'Ok',
           buttonNegative: 'Cancel',
         }}
-      />
+      /> */}
+      <View style={styles.container} />
       <TouchableOpacity onPress={takePicture} style={styles.capture}>
-        <Text style={{ fontSize: 14 }}> SNAP </Text>
+        <Icon.Button name="facebook" backgroundColor="#3b5998">
+          <Text style={{ fontFamily: 'Arial', fontSize: 15 }}>
+            Login with Facebook
+          </Text>
+        </Icon.Button>
       </TouchableOpacity>
     </>
   );
@@ -47,12 +53,15 @@ const Camera = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: 'red',
   },
   capture: {
     position: 'absolute',
     width: '10%',
     height: '10%',
     backgroundColor: 'blue',
+    bottom: '20%',
+    left: '45%',
   },
 });
 

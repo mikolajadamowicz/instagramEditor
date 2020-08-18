@@ -259,6 +259,8 @@ PODS:
   - RNPhotoEditor (1.0.6):
     - iOSPhotoEditor
     - React
+  - RNVectorIcons (7.0.0):
+    - React
   - Yoga (1.14.0)
 
 DEPENDENCIES:
@@ -293,6 +295,7 @@ DEPENDENCIES:
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
   - RNFS (from `../node_modules/react-native-fs`)
   - RNPhotoEditor (from `../node_modules/react-native-photo-editor/ios`)
+  - RNVectorIcons (from `../node_modules/react-native-vector-icons`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
@@ -359,6 +362,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-fs"
   RNPhotoEditor:
     :path: "../node_modules/react-native-photo-editor/ios"
+  RNVectorIcons:
+    :path: "../node_modules/react-native-vector-icons"
   Yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
@@ -398,8 +403,9 @@ SPEC CHECKSUMS:
   ReactCommon: a0a1edbebcac5e91338371b72ffc66aa822792ce
   RNFS: 2bd9eb49dc82fa9676382f0585b992c424cd59df
   RNPhotoEditor: cbdf7ff80d3b31a639e9fff18dd6e75d260b73ca
+  RNVectorIcons: da6fe858f5a65d7bbc3379540a889b0b12aa5976
   Yoga: 7740b94929bbacbddda59bf115b5317e9a161598
 
-PODFILE CHECKSUM: 95c8575ceaf21b73733fd8baa1d2063766812426
+PODFILE CHECKSUM: 2b10747bc6dcb76517196cf1a044dbafff36df56
 
 COCOAPODS: 1.9.1
