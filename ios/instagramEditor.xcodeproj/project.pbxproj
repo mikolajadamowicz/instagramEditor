@@ -17,7 +17,6 @@
 		2DCD954D1E0B4F2C00145EB5 /* instagramEditorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* instagramEditorTests.m */; };
 		2E7DED953FEFE9A2F11893B7 /* libPods-instagramEditor-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 07739825CA30F81BAD352DE8 /* libPods-instagramEditor-tvOSTests.a */; };
 		3B7CA457E888493622E48B16 /* libPods-instagramEditor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D5553AC2B394D2F3CFBE2F0 /* libPods-instagramEditor.a */; };
-		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		B09A999143DB6348026E8470 /* libPods-instagramEditor-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A8BF566341DA918CD27B605 /* libPods-instagramEditor-tvOS.a */; };
 		F9FF9C16F4942270295AEB45 /* libPods-instagramEditor-instagramEditorTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A53E3563E06F30EF65948A53 /* libPods-instagramEditor-instagramEditorTests.a */; };
 /* End PBXBuildFile section */
@@ -340,7 +339,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -539,6 +537,7 @@
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SimpleLineIcons.ttf",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Zocial.ttf",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/LaunchScreen.storyboardc",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ColorCollectionViewCell.nib",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EmojiCollectionViewCell.nib",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/icomoon.ttf",

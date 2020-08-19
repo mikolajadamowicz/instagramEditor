@@ -1,0 +1,59 @@
+diff --git a/cocoapods-patch-20200819-17134-1n6rbfl/iOSPhotoEditor/Photo Editor/Photo Editor/PhotoEditorViewController.xib b/Pods/iOSPhotoEditor/Photo Editor/Photo Editor/PhotoEditorViewController.xib
+index f067d33..81e9628 100644
+--- a/cocoapods-patch-20200819-17134-1n6rbfl/iOSPhotoEditor/Photo Editor/Photo Editor/PhotoEditorViewController.xib	
++++ b/Pods/iOSPhotoEditor/Photo Editor/Photo Editor/PhotoEditorViewController.xib	
+@@ -1,11 +1,8 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+-    <device id="retina4_7" orientation="portrait">
+-        <adaptation id="fullscreen"/>
+-    </device>
++<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
++    <device id="retina4_7" orientation="portrait" appearance="light"/>
+     <dependencies>
+-        <deployment identifier="iOS"/>
+-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
++        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+     </dependencies>
+@@ -238,7 +235,7 @@
+                     </constraints>
+                 </view>
+                 <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KxU-y4-Jwh">
+-                    <rect key="frame" x="323" y="12" width="40" height="32"/>
++                    <rect key="frame" x="323" y="8" width="40" height="32"/>
+                     <viewLayoutGuide key="safeArea" id="NGM-P0-r7T"/>
+                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                     <size key="titleShadowOffset" width="1" height="0.0"/>
+@@ -251,7 +248,7 @@
+                     </connections>
+                 </button>
+                 <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yAt-sK-1nK">
+-                    <rect key="frame" x="162" y="605" width="50" height="50"/>
++                    <rect key="frame" x="162.5" y="605" width="50" height="50"/>
+                     <subviews>
+                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sqh-uS-U1m">
+                             <rect key="frame" x="9.5" y="10" width="31" height="30"/>
+@@ -301,11 +298,11 @@
+             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+             <constraints>
+                 <constraint firstItem="87h-1G-t5q" firstAttribute="leading" secondItem="HPk-Bg-V0q" secondAttribute="leading" id="0ft-JY-szV"/>
+-                <constraint firstItem="KxU-y4-Jwh" firstAttribute="top" secondItem="Zfb-jk-lQO" secondAttribute="top" constant="-8" id="1QI-yc-Gke"/>
++                <constraint firstItem="KxU-y4-Jwh" firstAttribute="top" secondItem="Zfb-jk-lQO" secondAttribute="top" constant="8" id="1QI-yc-Gke"/>
+                 <constraint firstItem="Cy8-ap-fH9" firstAttribute="centerX" secondItem="HPk-Bg-V0q" secondAttribute="centerX" id="24Z-2f-Tyk"/>
+                 <constraint firstItem="S1Y-ZS-dct" firstAttribute="leading" secondItem="HPk-Bg-V0q" secondAttribute="leading" id="2tC-2e-oA6"/>
+                 <constraint firstItem="Cy8-ap-fH9" firstAttribute="leading" secondItem="HPk-Bg-V0q" secondAttribute="leading" id="6eK-mF-0OL"/>
+-                <constraint firstItem="3MS-N5-3xY" firstAttribute="top" secondItem="Zfb-jk-lQO" secondAttribute="top" constant="-20" id="Fj6-PW-wbF"/>
++                <constraint firstItem="3MS-N5-3xY" firstAttribute="top" secondItem="Zfb-jk-lQO" secondAttribute="top" id="Fj6-PW-wbF"/>
+                 <constraint firstItem="Zfb-jk-lQO" firstAttribute="trailing" secondItem="3MS-N5-3xY" secondAttribute="trailing" id="M86-Ia-XcZ"/>
+                 <constraint firstItem="rLz-36-0xz" firstAttribute="top" secondItem="HPk-Bg-V0q" secondAttribute="top" id="RYD-1T-XNJ"/>
+                 <constraint firstAttribute="trailing" secondItem="ZGa-1B-gkO" secondAttribute="trailing" id="SbH-L6-vj9"/>
+@@ -326,6 +323,7 @@
+                 <constraint firstItem="3MS-N5-3xY" firstAttribute="leading" secondItem="Zfb-jk-lQO" secondAttribute="leading" id="zYw-cX-ezI"/>
+             </constraints>
+             <viewLayoutGuide key="safeArea" id="Zfb-jk-lQO"/>
++            <point key="canvasLocation" x="138" y="154"/>
+         </view>
+     </objects>
+ </document>

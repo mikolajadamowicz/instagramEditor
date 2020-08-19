@@ -2,6 +2,7 @@ require_relative '../node_modules/react-native/scripts/react_native_pods'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 # use_frameworks!
 platform :ios, '10.0'
+plugin 'cocoapods-patch'
 # https://stackoverflow.com/questions/50718018/xcode-10-error-multiple-commands-produce/56964761 delete storyboard.c
 target 'instagramEditor' do
   config = use_native_modules!
@@ -12,6 +13,7 @@ target 'instagramEditor' do
   target 'instagramEditorTests' do
     inherit! :complete
     # Pods for testing
+
   end
 
   # Enables Flipper.
