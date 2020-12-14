@@ -46,6 +46,7 @@ const App = () => {
           //   'sticker',
           //   'text',
           // ],
+          hiddenControls: ['crop'],
           colors: undefined,
           onDone: () => {
             console.log('on done');
